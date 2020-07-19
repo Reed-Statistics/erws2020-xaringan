@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(3, 54, 73, 1);;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway';
+  font-weight: 600;
+}

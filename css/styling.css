@@ -1,0 +1,26 @@
+/* in line code */
+
+.remark-code {
+  color: rgba(192, 41, 66, 1);
+}
+
+
+.remark-inline-code {
+  color: rgba(192, 41, 66, 1);
+}
+
+pre {
+  background: rgba(205, 179, 128, .3);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/******************
+ * Coloured content boxes
+ ****************/
+.content-box { 
+    box-sizing: border-box;
+    background-color: rgba(205, 179, 128, .3);
+}
+
+.bright-orange { color: #FA6900;}

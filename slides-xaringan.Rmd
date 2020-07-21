@@ -341,7 +341,7 @@ knitr::include_graphics("img/template.png")
 .pull-left[
 
 
- To create two columns, use `.pull-left[ ]` and `.pull-right[ ]`
+*  To create two columns, use `.pull-left[ ]` and `.pull-right[ ]`
 
 
 
@@ -371,7 +371,83 @@ Other stuff
 
 ]
 
+---
 
+## `xaringan` Tips!
+
+The default resolution for figures is not high enough.
+
+- Chunk option: `fig.retina = 1`
+
+
+```{r, echo= TRUE, warning = FALSE, message=FALSE, fig.height = 2.5, fig.width=5, eval = TRUE, fig.retina = 1}
+
+# Isabelle's histogram of the inventory date 
+count(pdxTrees_parks, Inventory_Date) %>%  
+  ggplot(aes(x = Inventory_Date)) +   
+  geom_histogram() 
+```
+
+
+---
+
+## `xaringan` Tips!
+
+The default resolution for figures is not high enough.
+
+- Chunk option: `fig.retina = 3`
+
+
+```{r, echo= TRUE, warning = FALSE, message=FALSE, fig.height = 2.5, fig.width=5, eval = TRUE, fig.retina = 3}
+
+# Isabelle's histogram of the inventory date 
+count(pdxTrees_parks, Inventory_Date) %>%  
+  ggplot(aes(x = Inventory_Date)) +   
+  geom_histogram() 
+```
+
+---
+
+## `xaringan` Tips!
+
+You can highlight code with `{{}}`
+
+
+```{r, echo= TRUE, warning = FALSE, message=FALSE, fig.height = 2.5, fig.width=5, eval = TRUE, fig.retina = 3}
+
+# Isabelle's histogram of the inventory date 
+count(pdxTrees_parks, Inventory_Date) %>%  
+  ggplot(aes(x = Inventory_Date)) +   
+{{  geom_histogram() }}
+```
+
+---
+
+## Useful YAML Additions
+
+To automatically play your slides add `autoplay`:
+
+```
+---
+output:
+  xaringan::moon_reader:
+    nature:
+      autoplay: 30000 
+---      
+```
+
+--
+
+To insert a countdown timer, insert `countdown`
+
+```
+---
+output:
+  xaringan::moon_reader:
+    nature:
+      countdown: 60000
+---
+```
 
 ---
 
@@ -468,6 +544,16 @@ $$
 --
 
 * `xaringanthemer`: Great package for easily change the theme without needing to learn CSS.
+
+
+---
+
+class: center, middle
+background-image: url(img/jelleke-vanooteghem-gc3sGgo3q1I-unsplash.jpg)
+background-size: cover
+
+
+# <span style="color: white;">Questions? </span>
 
 
 
